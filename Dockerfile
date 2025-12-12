@@ -1,6 +1,8 @@
 # Start from official RunPod ComfyUI worker base
 FROM runpod/worker-comfyui:5.6.0-base
 
+RUN /usr/bin/yes | comfy --workspace /comfyui update all;
+
 # Install base Python dependencies
 RUN pip install --no-cache-dir \
     pillow>=10.3.0 \
