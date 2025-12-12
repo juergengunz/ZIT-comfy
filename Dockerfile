@@ -28,7 +28,5 @@ RUN comfy model download --url https://huggingface.co/Comfy-Org/z_image_turbo/re
 RUN comfy model download --url https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/diffusion_models/z_image_turbo_bf16.safetensors --relative-path models/diffusion_models --filename z_image_turbo_bf16.safetensors
 RUN comfy model download --url https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors --relative-path models/vae --filename ae.safetensors
 
-RUN comfy model download --url https://huggingface.co/juergengunz/skin-lora/resolve/main/1xSkinContrast-SuperUltraCompact.pth --relative-path models/upscale_models --filename 1xSkinContrast-SuperUltraCompact.pth
-
 
 
